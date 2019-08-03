@@ -4,10 +4,10 @@ android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "org.love2d.android"
+        applicationId "com.mikelduke.magicshapes"
         versionCode 26
-        versionName "11.1"
-        minSdkVersion 14
+        versionName "11.1-magicshapes"
+        minSdkVersion 16
         targetSdkVersion 28
     }
     buildTypes {

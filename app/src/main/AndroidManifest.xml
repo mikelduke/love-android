@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="org.love2d.android.executable"
+<!--<manifest package="org.love2d.android.executable"-->
+<manifest package="com.mikelduke.magicshapes"
       android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <!-- Allow writing to external storage -->
@@ -13,19 +14,19 @@
   <application
       android:allowBackup="true"
       android:icon="@drawable/love"
-      android:label="LÖVE for Android"
+      android:label="Magic Shapes"
       android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
       <service android:name="org.love2d.android.DownloadService" />
       <activity
-        android:name="org.love2d.android.GameActivity"
+        android:name="com.mikelduke.magicshapes.MagicShapesActivity"
         android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
-        android:label="LÖVE for Android"
+        android:label="Magic Shapes"
         android:launchMode="singleTop"
         android:screenOrientation="landscape" >
         <intent-filter>
           <action android:name="android.intent.action.MAIN" />
           <category android:name="android.intent.category.LAUNCHER" />
-          <category android:name="tv.ouya.intent.category.GAME"/>
+          <!--<category android:name="tv.ouya.intent.category.GAME"/>-->
         </intent-filter>
         <intent-filter>
           <action android:name="android.intent.action.VIEW" />
@@ -37,22 +38,22 @@
           <data android:host="*" />
         </intent-filter>
       </activity>
-      <activity
-        android:name="org.love2d.android.DownloadActivity"
-        android:noHistory="true" >
-        <intent-filter>
-          <action android:name="android.intent.action.VIEW" />
-          <category android:name="android.intent.category.DEFAULT" />
-          <category android:name="android.intent.category.BROWSABLE" />
-          <data android:scheme="http"
-            android:host="*"
-            android:mimeType="*/*"
-            android:pathPattern=".*\\.love" />
-          <data android:scheme="https"
-            android:host="*"
-            android:mimeType="*/*"
-            android:pathPattern=".*\\.love" />
-        </intent-filter>
-      </activity>
+      <!--<activity-->
+        <!--android:name="org.love2d.android.DownloadActivity"-->
+        <!--android:noHistory="true" >-->
+        <!--<intent-filter>-->
+          <!--<action android:name="android.intent.action.VIEW" />-->
+          <!--<category android:name="android.intent.category.DEFAULT" />-->
+          <!--<category android:name="android.intent.category.BROWSABLE" />-->
+          <!--<data android:scheme="http"-->
+            <!--android:host="*"-->
+            <!--android:mimeType="*/*"-->
+            <!--android:pathPattern=".*\\.love" />-->
+          <!--<data android:scheme="https"-->
+            <!--android:host="*"-->
+            <!--android:mimeType="*/*"-->
+            <!--android:pathPattern=".*\\.love" />-->
+        <!--</intent-filter>-->
+      <!--</activity>-->
     </application>
 </manifest> 

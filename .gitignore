@@ -1,3 +1,12 @@
+#android studio
+.project
+.settings/
+.classpath
+
+#build output
+app/release
+
+
 assets/
 bin/
 gen/
