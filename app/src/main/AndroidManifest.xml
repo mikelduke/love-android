@@ -16,7 +16,7 @@
       android:icon="@drawable/love"
       android:label="Magic Shapes"
       android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-      <service android:name="org.love2d.android.DownloadService" />
+      <!--<service android:name="org.love2d.android.DownloadService" />-->
       <activity
         android:name="com.mikelduke.magicshapes.MagicShapesActivity"
         android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
@@ -26,16 +26,15 @@
         <intent-filter>
           <action android:name="android.intent.action.MAIN" />
           <category android:name="android.intent.category.LAUNCHER" />
-          <!--<category android:name="tv.ouya.intent.category.GAME"/>-->
         </intent-filter>
         <intent-filter>
           <action android:name="android.intent.action.VIEW" />
           <category android:name="android.intent.category.DEFAULT" />
-          <category android:name="android.intent.category.BROWSABLE" />
-          <data android:scheme="file" />
-          <data android:mimeType="*/*" />
-          <data android:pathPattern=".*\\.love" />
-          <data android:host="*" />
+          <!--<category android:name="android.intent.category.BROWSABLE" />-->
+          <!--<data android:scheme="file" />-->
+          <!--<data android:mimeType="*/*" />-->
+          <!--<data android:pathPattern=".*\\.love" />-->
+          <!--<data android:host="*" />-->
         </intent-filter>
       </activity>
       <!--<activity-->
