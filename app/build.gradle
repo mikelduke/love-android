@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.mikelduke.magicshapes"
         versionCode 26
-        versionName "11.1-magicshapes"
+        versionName "11.1-magicshapes-0.1"
         minSdkVersion 16
         targetSdkVersion 28
     }
