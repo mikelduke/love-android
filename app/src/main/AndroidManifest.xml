@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--<manifest package="org.love2d.android.executable"-->
-<manifest package="com.mikelduke.magicshapes"
+<manifest package="com.mikelduke.airhockey"
       android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android">
     <!--<uses-permission android:name="android.permission.INTERNET"/>-->
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -14,14 +14,14 @@
   <application
       android:allowBackup="true"
       android:icon="@drawable/love"
-      android:label="Magic Shapes"
+      android:label="Air Hockey"
       android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
       android:usesCleartextTraffic="true" >
       <!--<service android:name="org.love2d.android.DownloadService" />-->
       <activity
-        android:name="com.mikelduke.magicshapes.MagicShapesActivity"
+        android:name="com.mikelduke.airhockey.AirHockeyActivity"
         android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden|navigation"
-        android:label="Magic Shapes"
+        android:label="Air Hockey"
         android:launchMode="singleTask"
         android:screenOrientation="landscape"
         android:resizeableActivity="false"

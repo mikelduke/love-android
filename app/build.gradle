@@ -4,9 +4,9 @@ android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.mikelduke.magicshapes"
-        versionCode 28
-        versionName "11.2-magicshapes-0.3"
+        applicationId "com.mikelduke.airhockey"
+        versionCode 27
+        versionName "11.2-air-hockey-0.1"
         minSdkVersion 16
         targetSdkVersion 28
     }
