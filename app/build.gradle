@@ -5,8 +5,8 @@ android {
     buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.mikelduke.magicshapes"
-        versionCode 27
-        versionName "11.2-magicshapes-0.2"
+        versionCode 28
+        versionName "11.2-magicshapes-0.3"
         minSdkVersion 16
         targetSdkVersion 28
     }
